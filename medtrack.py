@@ -97,7 +97,7 @@ def schedule_view(name, medicines):
     full_sched = get_current_sched(name)
 
     window = Tk()
-    window.title("Home")
+    window.title("Schedule")
     screen_width = window.winfo_screenwidth()
     screen_height = window.winfo_screenheight()
     window.geometry(f"{screen_width}x{screen_height}")
@@ -188,7 +188,7 @@ def schedule_edit(name, medicines):
 
         clear()
 
-        full_sched[time_p][day_p] = ''
+        full_sched[time_p][day_p] = '\n'
 
         update_sched(name, full_sched)
 
